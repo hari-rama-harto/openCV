@@ -1,4 +1,4 @@
-//apply plugin: 'com.android.library'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -13,5 +13,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+    }
+}
+
+all projects {
+    repositories {
+        google()
+        mavenCentral()
     }
 }
